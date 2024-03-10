@@ -1,0 +1,313 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section h2{
+    cursor:pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5) ;
+    z-index:100;
+    padding: 30px 30px 10px 30px;
+}
+
+.navbar ul{
+    list-style-type:none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+    font: 700;
+    display: block;
+    font-size: 16px;
+}
+
+.navbar ul li a::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    display: block;
+    transition:0.3s linear;
+    background-color:yellow;
+}
+
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+
+.navbar .icons i{
+    font-size: 16px;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    color:black;    
+}
+
+.navbar .icons i:hover{
+    color: yellow;
+
+}
+
+section .main{
+    display:flex;
+    position: relative;
+    justify-content: space-around;
+    top: 150px;
+    font-size: 18px;
+    font: 900;
+}
+
+section .main h1{
+    padding-top: 80px;
+}
+
+section .main img{
+    width: 40%;
+    height: 50vh;
+}
+
+section .main  span{
+    color: rgb(208, 255, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section .content1{
+    position:relative;
+    width: 300px;
+    left: 120px;
+}
+
+section .orderbtn{
+    height: 40px;
+    width: 130px;
+    position: relative;
+    left: 120px;
+    top: 50px;
+    background-color: yellow;
+    border-radius: 15px;
+    text-align: center;
+    font: 900;
+    transition: 0.3s;
+}
+
+section .orderbtn p{
+    padding-top: 10%;
+}
+
+section .orderbtn:hover{
+    background-color: rgba(89, 255, 47, 0.74);
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+
+}
+
+/*About*/
+.mainabout{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 50px  ;
+}
+
+.mainabout img{
+    width: 55%;
+    height: 50vh;
+    margin-right: 50px;
+}
+
+.mainabout .aboutus{
+    font: 900;
+}
+
+.mainabout .aboutus .content2{
+    padding-top: 30px;
+    width: 400px;
+}
+
+.mainabout .aboutus .aboutusbtn{
+    height: 40px;
+    width: 130px;
+    position: relative;
+    left: 120px;
+    top: 50px;
+    background-color: yellow;
+    border-radius: 15px;
+    text-align: center;
+    font: 900;
+    transition: 0.3s;
+}
+
+.mainabout .aboutus .aboutusbtn p{
+    padding-top: 10%;
+}
+
+.mainabout .aboutus .aboutusbtn:hover{
+    background-color: rgba(89, 255, 47, 0.74);
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+
+}
+
+
+.menu{
+    margin-top: 100px;
+}
+
+.menu h1{
+    text-align: center;
+}
+
+.menu span{
+    color: rgb(229, 255, 0);
+    text-decoration: underline;
+}
+
+
+
+.cards{
+    height:100vh;
+    border:2px solid rgb(238, 6, 6);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card1{
+    height: 280px;
+    width: 260px;   
+    overflow:hidden;
+    text-align: center;
+    border-radius: 10px;
+    margin:20px;
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+
+.card1 img{
+    width: 95%;
+    padding-top: 10px;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.card1-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card1:hover .card1-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card1-front, .card1-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .card1-front {
+    background-color: #757a23ab;
+    color: black;
+  }
+  
+  .card1-back {
+    background-color: #aab929;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .card1-back p{
+    margin-top: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font: 800;
+    font-size: 16px;
+  }
+
+  .card1-back h1{
+    margin-top: 20px;
+  }
+
+  .cardbtn{
+    height: 40px;
+    width: 130px;
+    transition: 0.3s;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 62px;
+    transition: linear;
+  }
+
+  .cardbtn p{
+    padding-top: 8%;
+  }
+
+  .cardbtn i{
+    position: relative;
+  }
+
+  .cardbtn:hover i{
+    transform: translate(7px);
+  }
+
+
+
+  .gallery{
+    height: 100vh;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 50px;
+  }
+
+  .gallery img{
+    height: 40vh;
+    width: 95%;
+    border: 2px solid black;
+  }
+
+
+  .content-gallery-imgbox-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-gallery-imgbox-1 h2,  .content-gallery-imgbox-1 h3{
+    position: absolute; 
+  }
